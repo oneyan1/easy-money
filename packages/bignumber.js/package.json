@@ -43,11 +43,15 @@
     "registry": "https://registry.npmjs.org"
   },
   "peerDependencies": {
-    "@easymoney/core": "^0.0.1"
+    "@easymoney/core": "^0.0.1",
+    "@easymoney/money": "^0.0.5",
+    "bignumber.js": "^9.0.0"
   },
   "devDependencies": {
     "typescript": "^3.8.3",
-    "@easymoney/core": "^0.0.1"
+    "@easymoney/core": "^0.0.1",
+    "@easymoney/money": "*",
+    "bignumber.js": "^9.0.0"
   },
   "engines": {
     "node": ">=10.8.x"
@@ -66,9 +70,5 @@
     "amount",
     "immutable",
     "monetary"
-  ],
-  "dependencies": {
-    "@easymoney/money": "0.0.5",
-    "bignumber.js": "^9.0.0"
-  }
+  ]
 }

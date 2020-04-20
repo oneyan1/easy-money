@@ -78,15 +78,18 @@ describe("bignumberMoney", () => {
     });
 
     //ERROR - wrong format
-    // it("should valid construct bignumber with decimals zero", () => {
-    //     const data1 = { amount: "10000000000000000000009.00", currency: "USD" };
-    //
-    //     const money1 = createMoney(data1);
-    //
-    //     expect(money1.getAmount()).toEqual("10000000000000000000009");
-    //
-    //     expect(money1.getCurrency()).toEqual(data1.currency);
-    // });
+    it("should valid construct bignumber with decimals zero", () => {
+      const data1 = {
+        amount: "1111222233334444555566667777.00",
+        currency: "USD"
+      };
+
+      const money1 = createMoney(data1);
+
+      expect(money1.getAmount()).toEqual("1111222233334444555566667777");
+
+      expect(money1.getCurrency()).toEqual(data1.currency);
+    });
 
     it("should valid construct integer with plus", () => {
       const data1 = { amount: "+100", currency: "USD" };
